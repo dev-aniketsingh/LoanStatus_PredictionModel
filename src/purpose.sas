@@ -1,0 +1,16 @@
+select(purpose);
+ when('car') purpose='1';
+ when('wedding') purpose='1';
+ when('credit_card') purpose='1';
+ when('home_improvement') purpose='1';
+ when('major_purchase') purpose='1';
+ when('house') purpose='1';
+ when('renewable_energy') purpose='1';
+ when('medical') purpose='2';
+ when('vacation') purpose='2';
+ when('debt_consolidation') purpose='2';
+ when('other') purpose='2';
+ when('moving') purpose='2';
+ when('small_business') purpose='3';
+ otherwise purpose_clus = 'U';
+end;
